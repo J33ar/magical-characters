@@ -1,0 +1,102 @@
+body {
+    font-family: 'Harry P', sans-serif;
+    background-image: url("../images/b8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+}
+
+#houseFilter {
+  position: absolute;
+  right: 20px;
+  top:37%;
+  font-family: 'Harry P', sans-serif;
+  font-size: 25px;
+  padding: 5px 30px;
+  border-radius: 8px;
+  border: none;
+  cursor :pointer;
+ }
+
+#characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-content {
+    width: 200px;
+    text-align: center;
+    margin: 34px 75px 22px 75px;
+    background: white;
+    border-radius: 12px;
+    transition: transform 0.5s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-content h3 {
+    font-size: 25px;
+}
+
+.card-content p {
+    margin: 4px 4px 10px;
+}
+
+img {
+    width: 100%;
+    height: 270px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#loadMoreBtn {
+    justify-self: center;
+    margin-bottom: 40px;
+    font-family: 'Harry P', sans-serif;
+    font-size: 30px;
+    padding: 15px 50px;
+    border-radius: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #ccc;
+    background-color: rgba(0,0,0,0.3);
+    font-size: 0.9rem;
+}
+
+#loadMoreBtn:hover {
+    background-color: #d8d8b7;
+    cursor: pointer;
+}
+
+.card-content:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 0 25px 25px #0c0c0c;
+    cursor: pointer;
+}
+
+@media (max-width: 635px) {
+  #houseFilter {
+    position: static;
+    margin-top: 10px;
+  }
+}
